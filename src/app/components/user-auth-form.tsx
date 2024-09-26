@@ -58,7 +58,7 @@ export function UserAuthForm({
       >
         {({ isSubmitting }) => (
           <Form>
-            <div className="grid gap-2">
+            <div className="grid gap-6">
               <div className="grid gap-1">
                 <Label htmlFor="name">Nome</Label>
                 <Field
