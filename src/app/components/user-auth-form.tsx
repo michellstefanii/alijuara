@@ -45,6 +45,7 @@ export function UserAuthForm({
       })
       .catch((error) => {
         console.error("Erro ao criar usuário:", error);
+        setIsLoading(false);
       });
   }
 

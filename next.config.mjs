@@ -9,6 +9,9 @@ const nextConfig = {
     ],
   },
   experimental: {
+    serverActions: {
+      allowedOrigins: ["alinejdearaujo.vercel.app", "*.alinejdearaujo.vercel.app"],
+    },
     serverComponentsExternalPackages: ["@prisma/client"],
   },
 };
