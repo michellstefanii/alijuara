@@ -30,9 +30,9 @@ export default function AuthenticationPage() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                Através da Tua Autoexpressão Vocal, ou seja, aquilo que pensas,
-                sentes e falas, determinamos o futuro e assim, vivemos na
-                escassez ou na abundância...
+                &#34;Através da Tua Autoexpressão Vocal, ou seja, aquilo que
+                pensas, sentes e falas, determinamos o futuro e assim, vivemos
+                na escassez ou na abundância...&#34;
               </p>
               <footer className="text-sm">Aline J. de Araujo</footer>
             </blockquote>
@@ -42,7 +42,8 @@ export default function AuthenticationPage() {
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 gap-8 ">
               <h1 className="text-4xl uppercase font-medium tracking-tight text-rose-800">
-                "Aula Magna Aberta e Gratuita dia 03/10 às 19h pelo Google Meet"
+                &#34;Aula Magna Aberta e Gratuita dia 03/10 às 19h pelo Google
+                Meet&#34;
               </h1>
               <h2 className="text-5xl text-center font-medium tracking-tight text-gray-700">
                 Autoexpressão e Prosperidade
