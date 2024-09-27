@@ -81,7 +81,7 @@ export function UserAuthForm({
                   id="email"
                   type="email"
                   as={Input}
-                  placeholder="name@example.com"
+                  placeholder="nome@email.com"
                   disabled={isLoading}
                 />
                 <ErrorMessage
