@@ -12,11 +12,12 @@ export default function AuthenticationPage() {
   return (
     <>
       <div className="container relative h-screen flex-col items-center justify-center  grid md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
-        <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
-          <div className="flex justify-center">
+        <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex gap-16">
+          <div className="flex justify-center mt-48">
             <Image
+              className="z-20"
               src="https://i.ibb.co/ZcPrW3J/photo-2024-09-26-21-08-44.jpg"
-              width={1280}
+              width={600}
               height={720}
               alt={""}
             />
