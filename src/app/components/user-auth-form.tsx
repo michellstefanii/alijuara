@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Icons } from "./icons";
+import { handler } from "@/actions/user-register";
 // import { useRouter } from "next/navigation";
 
 const validationSchema = Yup.object({
@@ -35,17 +36,10 @@ export function UserAuthForm({
   }) {
     setIsLoading(true);
 
-    await fetch(`/api/user`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(values),
-    })
+    await handler(values)
       .then(async (res) => {
-        if (res.status === 200) {
-          // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
-        }
+        console.log(res, `res`);
+        // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
         setIsLoading(false);
       })
       .catch((error) => {
