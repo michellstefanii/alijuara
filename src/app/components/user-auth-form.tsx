@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Icons } from "./icons";
 import { handler } from "@/actions/user-register";
-// import { useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const validationSchema = Yup.object({
   name: Yup.string().required("Nome é obrigatório"),
@@ -27,7 +27,7 @@ export function UserAuthForm({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
-  // const router = useRouter();
+  const router = useRouter();
 
   async function handleSubmit(values: {
     phone: string;
@@ -37,9 +37,8 @@ export function UserAuthForm({
     setIsLoading(true);
 
     await handler(values)
-      .then(async (res) => {
-        console.log(res, `res`);
-        // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
+      .then(async () => {
+        router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
         setIsLoading(false);
       })
       .catch((error) => {
