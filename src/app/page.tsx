@@ -6,15 +6,14 @@ import { UserAuthForm } from "@/app/components/user-auth-form";
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
   description: "Aula Magna sobre Autoexpressão Vocal",
-  
 };
 
 export default function AuthenticationPage() {
   return (
     <>
-      <div className="container relative h-screen flex-col items-center justify-center  grid md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
-        <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex gap-16">
-          <div className="flex justify-center mt-48">
+      <div className="container relative h-screen flex-col justify-center  grid md:grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+        <div className="relative pt-20 hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex gap-16">
+          <div className="flex justify-center">
             <Image
               className="z-20"
               src="https://i.ibb.co/ZcPrW3J/photo-2024-09-26-21-08-44.jpg"
@@ -40,7 +39,7 @@ export default function AuthenticationPage() {
             </blockquote>
           </div>
         </div>
-        <div className="p-8">
+        <div className="p-8  pt-20">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 gap-8 ">
               <h1 className="text-4xl uppercase font-medium tracking-tight text-rose-800">
