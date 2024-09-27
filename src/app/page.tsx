@@ -30,9 +30,9 @@ export default function AuthenticationPage() {
           <div className="relative z-20 mt-auto">
             <blockquote className="space-y-2">
               <p className="text-lg">
-                "Através da Tua Autoexpressão Vocal, ou seja, aquilo que pensas,
+                Através da Tua Autoexpressão Vocal, ou seja, aquilo que pensas,
                 sentes e falas, determinamos o futuro e assim, vivemos na
-                escassez ou na abundância..."
+                escassez ou na abundância...
               </p>
               <footer className="text-sm">Aline J. de Araujo</footer>
             </blockquote>
