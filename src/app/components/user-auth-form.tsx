@@ -27,6 +27,7 @@ export function UserAuthForm({
   ...props
 }: React.HTMLAttributes<HTMLDivElement>) {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
+  const create = handler.bind(null);
   // const router = useRouter();
 
   async function handleSubmit(values: {
@@ -36,7 +37,7 @@ export function UserAuthForm({
   }) {
     setIsLoading(true);
 
-    await handler(values)
+    await create(values)
       .then(async (res) => {
         console.log(res, `res`);
         // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
