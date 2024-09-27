@@ -5,7 +5,7 @@ import { UserAuthForm } from "@/app/components/user-auth-form";
 
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
-  description: "- Faça parte desse jornada",
+  description: "Aula Magna sobre Autoexpressão Vocal",
 };
 
 export default function AuthenticationPage() {
