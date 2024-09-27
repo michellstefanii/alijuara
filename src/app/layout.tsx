@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,6 +20,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Aline J. de Araujo</title>
+        <meta
+          property="og:title"
+          content="Aula Magna sobre Autoexpressão Vocal"
+        />
+        <meta
+          property="og:description"
+          content="Aula Magna Aberta e Gratuita dia 03/10 às 19h pelo Google Meet"
+        />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/ZcPrW3J/photo-2024-09-26-21-08-44.jpg"
+        />
+        <meta property="og:url" content="https://alinejdearaujo.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <body className={roboto.className}>{children}</body>
     </html>
   );
