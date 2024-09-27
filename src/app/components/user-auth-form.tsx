@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Icons } from "./icons";
-import { createUser } from "@/api/createUser";
 // import { useRouter } from "next/navigation";
 
 const validationSchema = Yup.object({
@@ -35,18 +34,23 @@ export function UserAuthForm({
     name: string;
   }) {
     setIsLoading(true);
-    try {
-      await createUser({
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-      }).finally(() => {
-        // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
+
+    await fetch(`/api/user`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then(async (res) => {
+        if (res.status === 200) {
+          // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
+        }
         setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Erro ao criar usuário:", error);
       });
-    } catch (error) {
-      console.error("Erro ao criar usuário:", error);
-    }
   }
 
   return (

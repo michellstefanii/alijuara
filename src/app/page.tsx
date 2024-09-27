@@ -6,6 +6,7 @@ import { UserAuthForm } from "@/app/components/user-auth-form";
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
   description: "Aula Magna sobre Autoexpressão Vocal",
+  
 };
 
 export default function AuthenticationPage() {
@@ -28,7 +29,7 @@ export default function AuthenticationPage() {
             </p>
           </div>
           <div className="absolute inset-0 bg-rose-800" />
-          <div className="relative z-20 mt-auto">
+          <div className="relative z-20 mt-8">
             <blockquote className="space-y-2">
               <p className="text-lg">
                 &#34;Através da Tua Autoexpressão Vocal, ou seja, aquilo que
