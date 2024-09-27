@@ -14,6 +14,7 @@ const nextConfig = {
     },
     serverComponentsExternalPackages: ["@prisma/client"],
   },
+  telemetry: true,
 };
 
 export default nextConfig;
