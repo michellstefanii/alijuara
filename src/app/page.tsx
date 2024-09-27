@@ -15,7 +15,7 @@ export default function AuthenticationPage() {
         <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
           <div className="flex justify-center">
             <Image
-              src="https://i.ibb.co/dkmchyT/bg.webp"
+              src="https://i.ibb.co/ZcPrW3J/photo-2024-09-26-21-08-44.jpg"
               width={1280}
               height={720}
               alt={""}
