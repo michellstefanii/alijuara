@@ -1,6 +1,6 @@
 "use server";
 
-import { prisma } from "@/lib/db";
+import prisma from "@/lib/db";
 
 interface CreateUserInput {
   name: string;
@@ -10,7 +10,7 @@ interface CreateUserInput {
 
 export async function handler(req: CreateUserInput) {
   try {
-    const user = await prisma.users.create({
+    await prisma.users.create({
       data: {
         name: req.name,
         phone: req.phone,
@@ -18,7 +18,7 @@ export async function handler(req: CreateUserInput) {
       },
     });
 
-    return user;
+    return { success: true };
   } catch (error) {
     return error;
   }
