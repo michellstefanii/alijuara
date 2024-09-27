@@ -41,7 +41,7 @@ export function UserAuthForm({
         email: values.email,
         phone: values.phone,
       }).finally(() => {
-        router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
+        // router.push(String(process.env.NEXT_PUBLIC_SITE_REDIRECT));
         setIsLoading(false);
       });
     } catch (error) {
