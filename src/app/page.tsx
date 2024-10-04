@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 import { UserAuthForm } from "@/app/components/user-auth-form";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
@@ -16,7 +17,7 @@ export default function AuthenticationPage() {
           <div className="flex justify-center">
             <Image
               className="z-20"
-              src="https://i.ibb.co/ZcPrW3J/photo-2024-09-26-21-08-44.jpg"
+              src="https://i.ibb.co/FqZH8Gx/photo-2024-10-03-16-30-03.jpg"
               width={600}
               height={720}
               alt={""}
@@ -24,7 +25,7 @@ export default function AuthenticationPage() {
           </div>
           <div className="relative z-20">
             <p className="text-3xl text-center">
-              Aula Magna sobre Autoexpressão Vocal
+              Autoexpressão Vocal e suas diretrizes
             </p>
           </div>
           <div className="absolute inset-0 bg-rose-800" />
@@ -42,10 +43,6 @@ export default function AuthenticationPage() {
         <div className="p-8  pt-20">
           <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
             <div className="flex flex-col space-y-2 gap-8 ">
-              <h1 className="text-4xl uppercase font-medium tracking-tight text-rose-800">
-                &#34;Aula Magna Aberta e Gratuita dia 03/10 às 19h pelo Google
-                Meet&#34;
-              </h1>
               <h2 className="text-5xl text-center font-medium tracking-tight text-gray-700">
                 Autoexpressão e Prosperidade
               </h2>
