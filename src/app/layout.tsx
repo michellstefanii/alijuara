@@ -10,6 +10,10 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
   description: "- Descubra os segredos",
+  openGraph: {
+    images:
+      "https://i.ibb.co/FqZH8Gx/photo-2024-10-03-16-30-03.jpg",
+  },
 };
 
 export default function RootLayout({
