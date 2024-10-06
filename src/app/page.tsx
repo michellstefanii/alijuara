@@ -6,7 +6,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "Aline J. de Araujo",
-  description: "Aula Magna sobre Autoexpressão Vocal",
+  description: "Aula sobre Autoexpressão Vocal",
 };
 
 export default function AuthenticationPage() {
